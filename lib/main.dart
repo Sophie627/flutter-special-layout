@@ -97,12 +97,23 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
+            RaisedButton(onPressed: () {},
+              child: Text("up"),
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: <Widget>[
+                RaisedButton(onPressed: null,
+                  child: Text("left"),
+                ),
+                Image(image: AssetImage('assets/puritec.png')),
+                RaisedButton(onPressed: null,
+                  child: Text("right"),
+                ),
+              ],
+            ),
+             RaisedButton(onPressed: () {},
+              child: Text("down"),
             ),
           ],
         ),
